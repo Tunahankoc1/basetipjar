@@ -1,8 +1,8 @@
 {
   "accountAssociation": {
-    "header": "[FARCASTER'DAN ALINACAK]",
-    "payload": "[FARCASTER'DAN ALINACAK]",
-    "signature": "[FARCASTER'DAN ALINACAK]"
+    "header": "eyJmaWQiOjEzODM4NDYsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg5MjE2MkFmNzBhQmM2NzY5MDc2ODU0NTY0QjgxNDVCMDZhNEZlYjY4In0",
+    "payload": "eyJkb21haW4iOiJiYXNldGlwamFyLXRhdS52ZXJjZWwuYXBwIn0",
+    "signature": "JvRxIUKCCQtM2y3khxRtqwzwbSI1kJL980QmMKZfh3x/bd1gKsx07DqLe0kSDQZNBVM9UbaTppOP1LWtCNCcrRw="
   },
   "frame": {
     "version": "1",

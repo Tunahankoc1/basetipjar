@@ -50,9 +50,19 @@ function ethToWeiHex(ethAmountStr) {
 
 async function getProvider() {
   if (provider) return provider;
-  if (sdk.wallet && typeof sdk.wallet.getEthereumProvider === 'function') {
-    provider = await sdk.wallet.getEthereumProvider();
-  } else if (window.ethereum) {
+  try {
+    const inMiniApp = await sdk.isInMiniApp();
+    if (inMiniApp) {
+      const sdkProvider = await sdk.wallet.getEthereumProvider();
+      if (sdkProvider) {
+        provider = sdkProvider;
+        return provider;
+      }
+    }
+  } catch (err) {
+    // not running inside a Farcaster/Base host, fall back to injected provider
+  }
+  if (window.ethereum) {
     provider = window.ethereum;
   }
   return provider;
@@ -99,6 +109,7 @@ async function connectWallet() {
     connectBtn.classList.add('hidden');
     tipSection.classList.remove('hidden');
   } catch (err) {
+    console.error('connectWallet error:', err);
     setStatus('Bağlantı hatası', false);
   } finally {
     connectBtn.disabled = false;

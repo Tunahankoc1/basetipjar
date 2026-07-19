@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Base Tip Jar</title>
+
+  <meta name="fc:frame" content="vNext" />
+  <meta name="base:app_id" content="[SONRA EKLENECEK]" />
+
+  <meta property="og:title" content="Base Tip Jar" />
+  <meta property="og:description" content="Send a tip on Base with one tap" />
+  <meta property="og:image" content="/preview.png" />
+
+  <link rel="icon" href="/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="jar-wrap">
+      <div class="jar" id="jar">🫙</div>
+      <div class="coin" id="coinFly">🪙</div>
+    </div>
+
+    <h1>Base Tip Jar</h1>
+    <p class="subtitle">Bu projeye küçük bir destek bırak</p>
+
+    <div id="status" class="status">Cüzdan bağlı değil</div>
+
+    <button id="connectBtn" class="btn btn-primary">Cüzdanı Bağla</button>
+
+    <div id="tipSection" class="tip-section hidden">
+      <div class="amounts" id="amounts">
+        <button class="amount-btn" data-amount="0.0001">0.0001 ETH</button>
+        <button class="amount-btn" data-amount="0.0005">0.0005 ETH</button>
+        <button class="amount-btn" data-amount="0.001">0.001 ETH</button>
+      </div>
+
+      <div class="custom-row">
+        <input id="customAmount" type="number" step="0.0001" min="0" placeholder="Özel miktar (ETH)" />
+        <button id="customSendBtn" class="btn btn-secondary">Gönder</button>
+      </div>
+
+      <div id="result" class="result"></div>
+      <div id="totalTips" class="total-tips">Bu oturumda gönderilen: 0 tip</div>
+    </div>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>

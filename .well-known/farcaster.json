@@ -1,0 +1,26 @@
+{
+  "accountAssociation": {
+    "header": "[FARCASTER'DAN ALINACAK]",
+    "payload": "[FARCASTER'DAN ALINACAK]",
+    "signature": "[FARCASTER'DAN ALINACAK]"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Base Tip Jar",
+    "subtitle": "Bahşiş bırak",
+    "description": "Base ağı üzerinden tek dokunuşla küçük bir bahşiş gönder.",
+    "iconUrl": "https://[DOMAIN]/icon.png",
+    "homeUrl": "https://[DOMAIN]",
+    "imageUrl": "https://[DOMAIN]/preview.png",
+    "splashImageUrl": "https://[DOMAIN]/icon.png",
+    "splashBackgroundColor": "#0052ff",
+    "primaryCategory": "social",
+    "tags": ["tip", "base", "farcaster", "support"],
+    "tagline": "Tek dokunuşla bahşiş",
+    "heroImageUrl": "https://[DOMAIN]/preview.png",
+    "screenshotUrls": ["https://[DOMAIN]/preview.png"],
+    "ogTitle": "Base Tip Jar",
+    "ogDescription": "Base ağı üzerinden tek dokunuşla bahşiş gönder.",
+    "ogImageUrl": "https://[DOMAIN]/preview.png"
+  }
+}
